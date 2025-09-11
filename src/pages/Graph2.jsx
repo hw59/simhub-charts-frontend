@@ -8,7 +8,7 @@ const MasterCurve = () => {
     // Fetch data using Axios
     useEffect(() => {
         axios
-            .get("http://127.0.0.1:8000/get-master-curve-for-all-temperatures") // 🔹 Replace with actual API URL
+            .get("https://sim-hub.poly.edu:8001/get-master-curve-for-all-temperatures") // 🔹 Replace with actual API URL
             .then((response) => {
                 console.log("Fetched Data:", response.data); // Debugging
 

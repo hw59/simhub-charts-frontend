@@ -216,7 +216,7 @@ const MasterCurveGraph = () => {
         const fetchGraphData = async () => {
             try {
                 setIsLoading(true);
-                const { data } = await axios.get("http://127.0.0.1:8000/get-master-curve-for-all-temperatures");
+                const { data } = await axios.get("https://sim-hub.poly.edu:8001/get-master-curve-for-all-temperatures");
                 console.log("Fetched data:", data?.graphData);
 
                 // Ensure the data is in the correct format

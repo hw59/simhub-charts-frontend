@@ -19,7 +19,7 @@ const Graph = () => {
     useEffect(() => {
         const fetchGraphData = async () => {
             try {
-                const response = await axios.get('http://127.0.0.1:8000/get-sheer-modulus-vs-frequency');
+                const response = await axios.get('https://sim-hub.poly.edu:8001/get-sheer-modulus-vs-frequency');
                 console.log('Raw Graph Data:', response.data.graphData);
                 setPlotData(response.data.graphData);
                 setLoading(false);

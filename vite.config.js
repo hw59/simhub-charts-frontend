@@ -10,7 +10,7 @@ export default defineConfig({
     },
     proxy: {
       '/api': {
-        target: 'http://localhost:8000', // FastAPI backend
+        target: 'https://sim-hub.poly.edu:8001', // FastAPI backend
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ''), // Removes /api prefix
       },
