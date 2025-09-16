@@ -138,7 +138,7 @@ const Home = () => {
             className="flex justify-center items-center min-h-screen bg-cover bg-center"
             style={{ backgroundImage: `url(${backgroundImage})` }}
         >
-            <FormContainer title="NYU Research Form">
+            <FormContainer title="ViscoMod-NYU User Tool">
                 <form onSubmit={handleSubmit}>
                     <div className="p-5">
                         <FormInput
